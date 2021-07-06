@@ -24,3 +24,13 @@ addToCollection('Changing', 'Britney', '2015');
 addToCollection('Choosing', 'Bob', '1990');
 
 console.log(collection);
+
+// Creating funciton that will show the collection
+function showCollection(array) {
+    console.log(`There are ${array.length} items in this array`)
+    for (let item of array) {
+        console.log(`${item.title}, by ${item.artist}, 
+        published in ${item.yearPublished}`)
+    }
+}
+showCollection(collection);
